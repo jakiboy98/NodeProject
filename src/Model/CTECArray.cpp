@@ -6,6 +6,7 @@
  */
 
 #include "CTECArray.h"
+#include <iostream>
 using namespace std;
 
 template <class Type>
@@ -86,7 +87,8 @@ Type* CTECArray<Type>::get(int position)
 			}
 			else
 			{
-				return current->getValue();
+				Type temp = current->getValue();
+				return &temp;
 			}
 		}
 	}
