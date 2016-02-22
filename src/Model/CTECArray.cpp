@@ -32,7 +32,7 @@ CTECArray<Type>::CTECArray(int size)
 		else
 		{
 			//this is the first node in the array.
-			ArrayNode temp;
+			ArrayNode &temp;
 			head = &temp;
 		}
 	}
